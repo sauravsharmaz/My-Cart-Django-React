@@ -1,29 +1,19 @@
+import React from 'react'
+import {Row} from 'react-bootstrap'
 import Products from '../products'
-import {Card,Col,Row} from 'react-bootstrap'
+import SingleProduct from '../components/SingleProduct'
 
-function Homescreen(){
+function HomeScreen() {
     
-    return(
-        <div><Row>
-            {
-                Products.map(function (prod){
-                    return (
-                        <Col>
-                        <Card className="py-5 mx-1" >
-                            <Card.Img src={prod.image} />
-                        <h1>{prod.name}</h1><hr/>
-                        <Card.Text>
-                            {prod.desc}
-                        </Card.Text>
-                        <h2>${prod.price}</h2>
-                        </Card>
-                        </Col>
-                    )
-                })
-            }
+    return (
+        <Row>
+            {Products.map(function (prod){
+                return (
+                    <SingleProduct product={prod}/>
+                )
+            }) }
         </Row>
-        </div>
     )
 }
 
-export default Homescreen
+export default HomeScreen
