@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 import Products from '../products'
 import SingleProduct from '../components/SingleProduct'
 
@@ -9,7 +9,9 @@ function HomeScreen() {
         <Row>
             {Products.map(function (prod){
                 return (
-                    <SingleProduct product={prod}/>
+                    <Col key={prod._id} >
+                        <SingleProduct product={prod}/>
+                    </Col>
                 )
             }) }
         </Row>
