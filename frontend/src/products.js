@@ -15,7 +15,7 @@ const Products= [
         'price':110,
         'desc':'the best laptop for vegetable vendors',
         'rating':4.4,
-        'image':'/images/mangobook.jpg'
+        'image':'/images/onionbook.jpg'
     },
     {
         '_id':'3',
@@ -33,7 +33,7 @@ const Products= [
         'price':146,
         'desc':'the best laptop for gamers',
         'rating':3.1,
-        'image':'/images/oraangebook.jpg'
+        'image':'/images/gamebook.jpg'
     }
 ]
 
